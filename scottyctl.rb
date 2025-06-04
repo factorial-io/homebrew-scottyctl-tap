@@ -1,7 +1,7 @@
 class Scottyctl < Formula
   desc "CLI tool for scotty PaaS"
   homepage "https://github.com/factorial-io/scotty"
-  version "0.1.0-alpha.32"
+  version "0.1.0-alpha.33"
   license "MIT"
 
   on_macos do
@@ -18,9 +18,9 @@ class Scottyctl < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/factorial-io/scotty/releases/download/v0.1.0-alpha.32/scottyctl-x86_64-unknown-linux-gnu.tar.gz"
+      url "https://github.com/factorial-io/scotty/releases/download/v0.1.0-alpha.33/scottyctl-x86_64-unknown-linux-gnu.tar.gz"
       # Replace with actual SHA256 after release
-      sha256 "788890375f2f68698fa5b8d8c1f224f5f54ca5ff7cf03b9290eb597066721d7e"
+      sha256 "a1d3cba39b04023dc0d81338e44cf46bed1c7ba0d0eceb9587e027265433b038"
     end
   end
 
