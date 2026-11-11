@@ -1,7 +1,7 @@
 class Scottyctl < Formula
   desc "CLI tool for Scotty"
   homepage "https://github.com/factorial-io/scotty"
-  version "v0.4.0"
+  version "v0.5.0"
 
   head do
     url "https://github.com/factorial-io/scotty.git", branch: "next"
@@ -10,17 +10,17 @@ class Scottyctl < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/factorial-io/scotty/releases/download/v0.4.0/scottyctl-aarch64-apple-darwin.tar.gz"
-      sha256 "d61b583abc9adf815ef300cbade840e4532a9e74794be0015ac9ca941726bcb3"
+      url "https://github.com/factorial-io/scotty/releases/download/v0.5.0/scottyctl-aarch64-apple-darwin.tar.gz"
+      sha256 "1886c4d777e3a3c870dbbcf7cbed32dd6754f3f67806704170204655f0d02fa7"
     elsif Hardware::CPU.intel?
-      url "https://github.com/factorial-io/scotty/releases/download/v0.4.0/scottyctl-x86_64-apple-darwin.tar.gz"
-      sha256 "11160b05a32717ab3f01ee2f2ec088bcd229841a7b9e778ed6cb914e0e6dd01b"
+      url "https://github.com/factorial-io/scotty/releases/download/v0.5.0/scottyctl-x86_64-apple-darwin.tar.gz"
+      sha256 "9926a8c0eb7c135fa2aa323ac26b401ee0ff82414035888bdf7e304968287843"
     end
   end
 
   on_linux do
-    url "https://github.com/factorial-io/scotty/releases/download/v0.4.0/scottyctl-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "7a527d9cccd0069aa73a75da62214e1816a3b5b3b6d6626f8f698ff956e9eb06"
+    url "https://github.com/factorial-io/scotty/releases/download/v0.5.0/scottyctl-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "22b491e81d08140e55e94d40cf7701c0a2ff5080bb039967386f08947caa992e"
   end
 
   def install
